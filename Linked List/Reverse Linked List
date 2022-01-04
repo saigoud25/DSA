@@ -21,3 +21,17 @@ class Solution {
         return prev;
     }
 }
+
+//Recursion
+        if(head == null || head.next == null)
+        {
+            return head;
+        }
+        
+        ListNode newHead = reverseList(head.next);
+        ListNode nextHead = head.next;
+        
+        nextHead.next = head;
+        head.next = null;
+        
+        return newHead; 
