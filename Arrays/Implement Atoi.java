@@ -1,6 +1,18 @@
 Implement Atoi
 https://practice.geeksforgeeks.org/problems/implement-atoi/1#
 
+Example 1:
+Input:
+str = 123
+Output: 123
+	
+Example 2:
+Input:
+str = 21a
+Output: -1
+Explanation: Output is -1 as a
+
+
 class Solution
 {
     int atoi(String str) {
