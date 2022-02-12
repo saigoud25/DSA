@@ -1,0 +1,2 @@
+->To compare 2D array
+Arrays.sort(array, Comparator.comparingDouble(o -> o[0]));
