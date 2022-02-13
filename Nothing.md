@@ -1,11 +1,12 @@
-**->To compare 2D array**
+__->To compare 2D array__
 Arrays.sort(array, Comparator.comparingDouble(o -> o[0]));
 (or)
 Arrays.sort(array, (a, b) -> Integer.compare(a[0], b[0]));
 eg: array = [[1,3],[2,6],[8,10],[15,18],[2,3],[9,10]]
 output: array = [[1,3],[2,6],[2,3],[8,10],[9,10],[15,18]]
--------------------------------------------------------------
-**->Iteration of Map**
+
+__->Iteration of Map__
+
 Method-1:
 for(Map.Entry<Integer, Integer> entry : map.entrySet())
 {
@@ -24,7 +25,8 @@ for (String key : hm.keySet())
 // using values() for iteration over values
 for (String value : hm.values())
     System.out.println("value: " + value);
-------------------------------------------------------------
+   
+   
 **->Iteration of Set**
 Method-1: //Using for-each loop
 for(String values : set){
@@ -38,4 +40,3 @@ Iterator value = set.iterator();
 while (value.hasNext()) {
     System.out.println(value.next());
 }
--------------------------------------------------------------
