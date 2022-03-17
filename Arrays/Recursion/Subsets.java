@@ -1,6 +1,38 @@
 Subsets
 https://practice.geeksforgeeks.org/problems/subsets-1613027340/1#
+and
+78. Subsets
+https://leetcode.com/problems/subsets/submissions/
 
+//LeetCode
+/*
+->Add an empty array to ret array
+->take an array from ret, add current element to that temp array and add back
+->repeat the it until the length of ret array
+*/
+class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> ret = new ArrayList<>();
+        ret.add(new ArrayList<Integer>());
+        
+        for(int i = 0; i<nums.length; i++)
+        {
+            int ele = nums[i];
+            int len = ret.size();
+            for(int j = 0; j<len; j++)
+            {
+                ArrayList<Integer> temp = new ArrayList<>(ret.get(j));
+                temp.add(ele);
+                ret.add(temp);    
+            }  
+        }
+        
+        return ret;
+    }
+}
+
+
+//GFG
 /*
 ->Regular Subsets method, Using take or not take an element
 ->Sort the result 2D ArrayList using Comparator
