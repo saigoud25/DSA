@@ -8,7 +8,7 @@ https://youtu.be/B89In5BctFA
 2.convert the set1(ArrayList) to set(HashSet) for searching nodes becomes O(1)
 3.Now find the i down nodes for each elements in the Set1 , i.e for 3 node 1down nodes are [5, 1]
     -> while i nodes are (k-position of each node)
-    -> for 5th node find (2-0)=0, printKDown(5, 0) zero down nodes
+    -> for 5th node find (2-0)=2, printKDown(5, 2) 2 down nodes
     -> for 3rd node find (2-1)=1, printKDown(3, 1) 1 down nodes
     -> make sure while for finding i down nodes, skip the taversing node.left/node.right
         if node.left/node.right is in Set
