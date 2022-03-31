@@ -40,4 +40,7 @@ while (value.hasNext()) {
     System.out.println(value.next());
 }
 
+
+->Binary Search is done on Sorted Array
+->Binary Search can also applied on Unsorted Array, This kind of problems called as *Binary Search on Answers*.
    
