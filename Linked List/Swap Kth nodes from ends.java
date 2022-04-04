@@ -1,3 +1,42 @@
+1721. Swapping Nodes in a Linked List
+https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+/*
+->First count the number of elements in the LinkedList
+->find the Kth position from the start
+->find the Kth position from the end (length-k+1)
+->Swap the both values
+*/
+class Solution {
+    public ListNode swapNodes(ListNode head, int k) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode curr = head;
+        int count = 0;
+        while(curr != null)
+        {
+            count++;
+            curr = curr.next;
+        }
+        ListNode first = helper(head, k);
+        ListNode second = helper(head, count-k+1);
+        // System.out.println(second.val);
+        int temp = first.val;
+        first.val = second.val;
+        second.val = temp;
+        
+        return head;
+    }
+    ListNode helper(ListNode node, int k)
+    {
+        for(int i = 1; i<k; i++)
+        {
+            node = node.next;
+        }
+        return node;
+    }
+}
+
+
+
 Swap Kth nodes from ends
 https://practice.geeksforgeeks.org/problems/swap-kth-node-from-beginning-and-kth-node-from-end-in-a-singly-linked-list/1
 
