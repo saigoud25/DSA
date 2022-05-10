@@ -1,5 +1,8 @@
+Maximum of all subarrays of size k
 IPL 2021 - Match Day 2
+
 (Need to find the max of each contiguous sub_array of length k)
+https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1#
 https://practice.geeksforgeeks.org/problems/deee0e8cf9910e7219f663c18d6d640ea0b87f87/1/#
 
 /*
