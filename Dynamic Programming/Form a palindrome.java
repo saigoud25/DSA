@@ -34,3 +34,38 @@ class Solution{
         return arr[i][j] = Math.max(lcs(s1, s2, i-1, j), lcs(s1, s2, i, j-1));
     }
 }
+
+
+//Tabular Method
+/*
+->Using Dynamic Programming
+->Find the Longest Common Subsequence(LCS) of the str & revese(str)
+->Subtract the LCS length from the length of str, it is the number of characters to be 
+inserted to make the str palindrome
+*/
+
+class Solution{
+    static int countMin(String str)
+    {
+        // code here
+        int n = str.length();
+        int[][] dp = new int[n+1][n+1];
+        String str2 = new StringBuilder(str).reverse().toString();
+        for(int i = 1; i<=n; i++)
+        {
+            for(int j = 1; j<=n; j++)
+            {
+                if(str.charAt(i-1)==str2.charAt(j-1))
+                {
+                    dp[i][j] = dp[i-1][j-1]+1;
+                }
+                else
+                {
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+        }
+        int l = dp[n][n];
+        return n-l;
+    }
+}
