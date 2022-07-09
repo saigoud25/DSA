@@ -50,6 +50,30 @@ while (value.hasNext()) {
 }
 
 
+For TreeMap:
+->map.ceilingKey(), returns the equal or closest greater key in the map
+->map.floorgKey(), returns the equal or closest lesser key in the map
+
+->map.higherKey(), returns the strictly greater element key in the map
+->map.lowerKey(), returns the strictly lesser element key in the map
+
+->map.firstKey(), returns first key of the map
+->map.lastKey(), returns last key of the map
+->map.pollFirstEntry(), retrives and removes first key-value from the map
+->map.pollLastEntry(), retrives and removes last key-value from the map
+
+For TreeSet: Method functionalities are same as TreeMap, instead of keys it retrives the values
+->set.ceiling()
+->set.floor()
+->set.higher()
+->set.lower()
+->set.first()
+->set.last()
+->set.pollFirst()
+->set.pollLast()
+
+
+
 ->Binary Search is done on Sorted Array
 ->Binary Search can also applied on Unsorted Array, This kind of problems called as *Binary Search on Answers*.
    
