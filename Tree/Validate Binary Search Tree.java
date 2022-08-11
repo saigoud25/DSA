@@ -1,6 +1,5 @@
 98. Validate Binary Search Tree
 https://leetcode.com/problems/validate-binary-search-tree/
-50%
 
 /*
 Method-1
