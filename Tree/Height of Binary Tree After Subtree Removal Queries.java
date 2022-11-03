@@ -1,7 +1,6 @@
 2458. Height of Binary Tree After Subtree Removal Queries
 https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/
 
-
 /*
 ->Find the Max 2 Heights from each Level
 https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/discuss/2757998/find-2-maximum-of-each-level
